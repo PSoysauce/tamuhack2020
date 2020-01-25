@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OrderPageComponent } from './order-page/order-page.component'
 
 @Component({
   selector: 'app-root',
