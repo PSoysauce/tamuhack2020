@@ -1,11 +1,37 @@
-import { Component } from '@angular/core';
-import { OrderPageComponent } from './order-page/order-page.component'
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { MatSidenav } from '@angular/material';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tamuhack2020';
+  @ViewChild('drawer', {static: false}) drawer: MatSidenav;
+  title = 'e-comm';
+  
+  toggelNavbar () {
+    this.drawer.toggle();
+  }
+
+   sideNavMenu = [
+     {
+       title: 'home',
+       link: '/home'
+     },
+     {
+      title: 'products',
+      link: '/products'
+    },
+    {
+      title: 'images',
+      link: ''
+    },
+    {
+      title: 'contact-us',
+      link: ''
+    }
+    
+   ];
 }
+
