@@ -1,7 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { LoginService } from '../../services/login.service';
-import { User } from '../../interfaces/Ilogin';
 import { EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
@@ -16,7 +15,6 @@ export class HeaderComponent implements OnInit {
 
   loadingEnable: boolean;
   sidenavEnable = false;
-  user: User;
 
   @Output()
   sidenav = new EventEmitter();
@@ -31,7 +29,11 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit() {
-    
+    window.onload = function fillusr_data(){
+      document.getElementById("points").innerHTML="9999 points";
+      document.getElementById("name").innerHTML="Jimmy Nutron";
+    };
+   
   }
 
 

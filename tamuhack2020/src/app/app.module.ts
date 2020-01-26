@@ -44,13 +44,6 @@ import { FooterComponent } from './common/footer/footer.component';
 import { ProductsComponent } from './products/products.component';
 import { ShoppingCartComponent } from './myprofile/shopping-cart/shopping-cart.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
-import { ProfileInformationComponent } from './myprofile/profile-information/profile-information.component';
-import { ManageAddressComponent } from './myprofile/manage-address/manage-address.component';
-import { SavedCardsComponent } from './myprofile/saved-cards/saved-cards.component';
-import { MyRewardsComponent } from './myprofile/my-rewards/my-rewards.component';
-import { ReviewsRatingComponent } from './myprofile/reviews-rating/reviews-rating.component';
-import { NotificationsComponent } from './myprofile/notifications/notifications.component';
-import { WishlistComponent } from './myprofile/wishlist/wishlist.component';
 import { ReactiveFormsModule } from '@angular/forms';
   
 @NgModule({
@@ -62,14 +55,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     ProductsComponent,
     ShoppingCartComponent,
-    MyprofileComponent,
-    ProfileInformationComponent,
-    ManageAddressComponent,
-    SavedCardsComponent,
-    MyRewardsComponent,
-    ReviewsRatingComponent,
-    NotificationsComponent,
-    WishlistComponent
+    MyprofileComponent
   ],
   imports: [
     BrowserModule,
